@@ -1,0 +1,11 @@
+<div class="py-2">
+  <%= link_to root_path, class: "d-flex align-items-center text-decoration-none mb-4" do %>
+    <%= image_tag "superyeti.png", width: 75, class: "bg-secondary rounded-circle", title: "Critter" %>
+  <% end %>
+
+  <div class="d-flex flex-column justify-content-end h-100">
+    <%= link_to "Inicio", root_path, class: "btn btn-light rounded-pill mb-2 text-start ps-4" %>
+    <%= link_to "Monstruos", monsters_path, class: "btn btn-light rounded-pill mb-2 text-start ps-4" %>
+    <%= link_to "Twittear", "#FIXME", class: "btn btn-primary rounded-pill mb-2 text-start ps-4" %>
+  </div>
+</div>
