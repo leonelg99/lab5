@@ -17,6 +17,17 @@ class MonstersController < ApplicationController
       render :new
    end
  end
+ def edit
+      @monster = Monster.find(params[:id])
+  end
+ def update
+   @monster = Monster.find(params[:id])
+   if @monster.update(monster_params)
+      redirect_to @monster, notice: "Se ha actualizado el Monstruo correctamente!"
+   else
+      render :edit
+   end
+ end
  private
  def monster_params
    params.require(:monster).permit(:name, :description, :phone, :birthdate)
