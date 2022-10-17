@@ -71,4 +71,6 @@ group :development do
   gem 'country_select'
 
   gem 'hirb'
+
+  gem "httparty"
 end
