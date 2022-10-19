@@ -13,7 +13,8 @@ class PhoneValidator
                 phone: @phone
             }
         })
-        #response is from argentine
-        response["country_code"] == "AR" && response["is_valid"] == true
+        #response is from argentine and valid format
+        response["country_code"] == "AR" && response["valid_format"]
+     
     end
 end
